@@ -113,7 +113,7 @@ label{
    
 }
 .btn:hover{
-    background-color: rgba(246, 12, 98, 0.695);
+    background-color: rgba(253, 29, 29, 0.695);
     box-shadow: 3px 3px 5px grey;
 }
 .btn:active{
