@@ -11,7 +11,7 @@ const question=[
 
 
     {
-        'que':'which of the following is the styling language',
+        'que':'which from the following is the styling language',
         'a':'html',
         'b':'css',
         'c':'js',
@@ -144,7 +144,7 @@ const endQuiz=()=>
     document.getElementById("box").innerHTML=`
     
 
-    <div class="Scoredis">
+    <div class="Scoredis ">
         <h1>Thankyou:) for playing the quiz!!!</h1>
         <h1>Your Score</h1>
         <div class="score">
@@ -176,7 +176,7 @@ const startTimer = (initialSeconds) => {
         }
         if(sec < 10)
         {
-         timer.style.color='red';
+         timer.style.color='white';
          sec=`0${sec}`;
         }
        

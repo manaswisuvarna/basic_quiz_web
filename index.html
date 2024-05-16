@@ -6,41 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 
 <body>
     <div class="container">
         <div id="box">
             <div class="innerbox">
-            <h2 id="question">1) dummy question number 1</h2>
+                <h2 id="question">1) dummy question number 1</h2>
 
-            <div id="timer">
+                <div id="timer">
+
+                </div>
+            </div>
+
+            <div class="ans">
+                <div class="opt">
+                    <div class="row">
+                        <div class="rowin">
+                            <input type="radio" class="option" value="a" name="option" id="op1"><label
+                                for="op1">option1</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="rowin">
+                            <input type="radio" class="option" value="b" name="option" id="op2"><label
+                                for="op2">option2</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="rowin">
+                            <input type="radio" class="option" value="c" name="option" id="op3"><label
+                                for="op3">option3</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="rowin">
+                            <input type="radio" class="option" value="d" name="option" id="op4"><label for="op4">option4
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="img">
+                    <i class="fa-solid fa-question"></i>
+                    <button class="btn" onclick="submitquiz()">Submit</button>
+
+                </div>
 
             </div>
+
         </div>
-            <div class="row">
-                <input type="radio" class="option" value="a" name="option" id="op1"><label for="op1">option1</label>
-            </div>
-
-            <div class="row">
-                <input type="radio" class="option" value="b" name="option" id="op2"><label for="op2">option2</label>
-            </div>
-
-            <div class="row">
-                <input type="radio" class="option" value="c" name="option" id="op3"><label for="op3">option3</label>
-            </div>
-
-            <div class="row">
-                <input type="radio" class="option" value="d" name="option" id="op4"><label for="op4">option4 </label>
-            </div>
-
-            <button class="btn" onclick="submitquiz()">Submit</button>
-
-         
-
-        </div>
-
+    </div>
     <script src="index.js"></script>
+
 </body>
 
 </html>

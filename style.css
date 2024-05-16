@@ -8,7 +8,11 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgba(114, 185, 210, 0.689);
+    /* background-color: rgba(114, 185, 210, 0.689); */
+    background-image: url(jk.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     font-family: "Roboto",sans-serif;
 }
 .container{
@@ -20,41 +24,107 @@ body{
 }
 #box{
     width: 50%;
-    padding: 20px;
-    height: 320px;
+    /* padding: 2px; */
+    /* height: 520px; */
     box-shadow: 1px 1px 5px grey;
-    background-color: aliceblue;
-    border-radius: 5px;
+    /* background-color: aliceblue; */
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+    border-radius: 50px;
+
     /* box-sizing: border-box; */
 }
-.row{
-    padding: 10px;
-    margin: 10px;
+
+.innerbox{
+    padding: 30px 40px;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+    border-radius: 30px 30px 0 0; 
+    font-size: larger;
+
+}
+
+.ans{
+    padding:15px 20px;
+ 
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 60px;
+    margin: 0 10px;
+  align-items: center;
+ /* justify-items: center; */
+         border-radius: 0 0 30px 30px; 
+
+}
+
+.ans i{
+    font-size: 250px;
+    /* margin: 2px 12px 12px 12px; */
+    /* background: rgb(131,58,180); */
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+    -webkit-background-clip: text; /* Clip the gradient to the text */
+    -webkit-text-fill-color: transparent;
+        /* border-radius: 0 0 30px 30px;  */
+
     
 }
+
+.row{
+    padding: 6px;
+    margin: 20px;
+    /* border: 2px solid white; */
+    /* background-color:; */
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+
+    color:white;
+    border-radius: 30px;
+    
+}
+
+.rowin{
+    background-color: black;
+    padding: 13px;
+    border-radius: 30px;
+}
+
+.img{
+    text-align: center;
+}
+
 label{
     /* background-color: aquamarine; */
-    padding: 10px;
+    padding: 30px;
     margin: 5px;
+    font-size: larger;
 }
 .btn{
-    width: 100%;
-    background-color: rgba(114, 185, 210, 0.827);
-    padding: 10px;
+    width: 97.4%;
+    background-color: black;
+    color: aliceblue;
+    padding: 13px;
     border: none;
- border-radius: 5px;
+ border-radius: 30px;
     font-size: 20px;
+    /* border-radius: 0 0 30px 30px;  */
+    margin: 0 5px;
+
    
 }
 .btn:hover{
-    background-color: rgba(114, 185, 210, 0.695);
-    box-shadow: 1px 1px 5px grey;
+    background-color: rgba(246, 12, 98, 0.695);
+    box-shadow: 3px 3px 5px grey;
 }
 .btn:active{
     background-color: rgba(114, 185, 210, 0.833);
 }
 .Scoredis{
     text-align: center;
+    background-color: black;
+    border-radius: 30px;
+    margin: 20px;
+    color: aliceblue;
     
 }
 .Scoredis h1,.Scoredis h2{
@@ -69,8 +139,88 @@ label{
 .innerbox{
     display: flex;
     justify-content: space-between;
+    /* position: relative; */
 }
 #timer
 {
     margin: 10px;
+    font-weight: 500;
+    
+}
+
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+   #box{
+    width: 80%;
+   }
+   .ans{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* position: relative; */
+    grid-gap: 30px;
+   }
+   .ans i{
+    /* display: none; */
+
+    font-size: 150px;
+}
+   /* .btn{
+    position: absolute;
+    left:0;
+    bottom: 40px;
+   } */
+   body{
+    background-color: black;
+   }
+   .innerbox{
+    font-size: 15px;
+   }
+   label{
+    font-size: 15px;
+   }
+   .rowin{
+    padding: 8px;
+   }
+
+
+
+
+}
+
+@media only screen and (max-width:600px) {
+    #box{
+        width: 95%;
+       }
+    .ans i{
+        display: none;
+       }
+
+       .ans{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        position: relative;
+        /* grid-gap: 30px; */
+       }
+        .btn{
+    position: absolute;
+    left:0;
+    bottom: 40px;
+   } 
+   
+   body{
+    background-color: black;
+   }
+   .innerbox{
+    font-size: 13px;
+   }
+   label{
+    font-size: 10px;
+   }
+   .rowin{
+    padding: 8px;
+   }
+
+
 }
